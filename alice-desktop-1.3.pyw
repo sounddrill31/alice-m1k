@@ -142,7 +142,7 @@ ButtonGreen = "#00ff00"   # 100% green
 ButtonRed = "#ff0000" # 100% red
 GUITheme = "Light"
 ButtonOrder = 0
-ColorMode = IntVar(0)
+ColorMode = IntVar(value=0)
 # # Can be Light or Dark or Blue or LtBlue or Custom where:
 FrameBG = "#d7d7d7" # Background color for frame
 ButtonText = "#000000" # Button Text color
@@ -213,54 +213,54 @@ ChbLableSrring3 = "CHB-TRMS "
 ChbLableSrring4 = "CHB-VP-P "
 ChbLableSrring5 = "CHB-IP-P "
 ChbLableSrring6 = "CHB-ACRMS "
-LabelPlotText = IntVar(0)
+LabelPlotText = IntVar(value=0)
 PlotLabelText = "Custom Plot Label"
 ## defaukt trace width in pixels / number of averages
-GridWidth = IntVar(0)
+GridWidth = IntVar(value=0)
 GridWidth.set(1)
-TRACEwidth = IntVar(0)
+TRACEwidth = IntVar(value=0)
 TRACEwidth.set(1)
-TRACEaverage = IntVar(0) # Number of average sweeps for average mode
+TRACEaverage = IntVar(value=0) # Number of average sweeps for average mode
 TRACEaverage.set(8)
-Vdiv = IntVar(0)
+Vdiv = IntVar(value=0)
 Vdiv.set(10)            # Number of vertical divisions for spectrum / Bode
-LPFTrigger = IntVar(0) # trigger lpf on/off
-Trigger_LPF_length  = IntVar(0)
+LPFTrigger = IntVar(value=0) # trigger lpf on/off
+Trigger_LPF_length  = IntVar(value=0)
 Trigger_LPF_length.set(10) # Length of Trigger box car LPF in samples
-HarmonicMarkers = IntVar(0)
+HarmonicMarkers = IntVar(value=0)
 HarmonicMarkers.set(3)
-AWGShowAdvanced = IntVar(0)
+AWGShowAdvanced = IntVar(value=0)
 AWGShowAdvanced.set(0)
-AWG_Amp_Mode = IntVar(0)
+AWG_Amp_Mode = IntVar(value=0)
 AWG_Amp_Mode.set(0) # 0 = Min/Max mode, 1 = Amp/Offset
-AWGA_Ext_Gain = DoubleVar(0)
+AWGA_Ext_Gain = DoubleVar(value=0)
 AWGA_Ext_Gain.set(1.0)
-AWGA_Ext_Offset = DoubleVar(0)
+AWGA_Ext_Offset = DoubleVar(value=0)
 AWGA_Ext_Offset.set(0.0)
-AWGB_Ext_Gain = DoubleVar(0)
+AWGB_Ext_Gain = DoubleVar(value=0)
 AWGB_Ext_Gain.set(1.0)
-AWGB_Ext_Offset = DoubleVar(0)
+AWGB_Ext_Offset = DoubleVar(value=0)
 AWGB_Ext_Offset.set(0.0)
-AWG_2X = IntVar(0) # selection variable to set AWG DAC channes for 2X samplerate modes
-Two_X_Sample = IntVar(0) # selection variable to set ADC channes for 2X samplerate mode
+AWG_2X = IntVar(value=0) # selection variable to set AWG DAC channes for 2X samplerate modes
+Two_X_Sample = IntVar(value=0) # selection variable to set ADC channes for 2X samplerate mode
 Two_X_Sample.set(0)
-ADC_Mux_Mode = IntVar(0) # selection variable to set ADC CHA for voltagr or current 2X samplerate mode
+ADC_Mux_Mode = IntVar(value=0) # selection variable to set ADC CHA for voltagr or current 2X samplerate mode
 ADC_Mux_Mode.set(0)
 Last_ADC_Mux_Mode = 0
-Alternate_Sweep_Mode = IntVar(0) # alternate sweeps when in 2X samplerate mode
+Alternate_Sweep_Mode = IntVar(value=0) # alternate sweeps when in 2X samplerate mode
 Alternate_Sweep_Mode.set(0)
 #
-ZEROstuffing = IntVar(0) # The zero stuffing value is 2 ** ZERO stuffing, calculated on initialize
+ZEROstuffing = IntVar(value=0) # The zero stuffing value is 2 ** ZERO stuffing, calculated on initialize
 ZEROstuffing.set(1)
-FFTwindow = IntVar(0)   # FFT window function variable
+FFTwindow = IntVar(value=0)   # FFT window function variable
 FFTwindow.set(5)        # FFTwindow 0=None (rectangular B=1), 1=Cosine (B=1.24), 2=Triangular non-zero endpoints (B=1.33),
                         # 3=Hann (B=1.5), 4=Blackman (B=1.73), 5=Nuttall (B=2.02), 6=Flat top (B=3.77)
 RelPhaseCorrection = 15 # Relative Phase error seems to be a random number each time board is powered up
-RelPhaseCenter = IntVar(0)
+RelPhaseCenter = IntVar(value=0)
 RelPhaseCenter.set(0) # Center line value for phase plots
-ImpedanceCenter = IntVar(0)
+ImpedanceCenter = IntVar(value=0)
 ImpedanceCenter.set(0) # Center line value for impedance plots
-MultipleBoards = IntVar(0)
+MultipleBoards = IntVar(value=0)
 MultipleBoards.set(0) # Turn on access for multiple m1k boards
 IgnoreFirmwareCheck = 0
 EnableScopeOnly = 0
@@ -299,30 +299,30 @@ contloop = 0
 discontloop = 0
 AwgLayout = "Horz"
 MarkerLoc = 'UL' # can be UL, UR, LL or LR
-CHA_TC1 = DoubleVar(0)
+CHA_TC1 = DoubleVar(value=0)
 CHA_TC1.set(1)
-CHA_TC2 = DoubleVar(0)
+CHA_TC2 = DoubleVar(value=0)
 CHA_TC2.set(1)
-CHB_TC1 = DoubleVar(0)
+CHB_TC1 = DoubleVar(value=0)
 CHB_TC1.set(1)
-CHB_TC2 = DoubleVar(0)
+CHB_TC2 = DoubleVar(value=0)
 CHB_TC2.set(1)
-CHA_A1 = DoubleVar(0)
+CHA_A1 = DoubleVar(value=0)
 CHA_A1.set(1)
-CHA_A2 = DoubleVar(0)
+CHA_A2 = DoubleVar(value=0)
 CHA_A2.set(1)
-CHB_A1 = DoubleVar(0)
+CHB_A1 = DoubleVar(value=0)
 CHB_A1.set(1)
-CHB_A2 = DoubleVar(0)
+CHB_A2 = DoubleVar(value=0)
 CHB_A2.set(1)
-Auto_ETS_Comp = IntVar(0)
-ETS_TC1 = DoubleVar(0)
+Auto_ETS_Comp = IntVar(value=0)
+ETS_TC1 = DoubleVar(value=0)
 ETS_TC1.set(0.18333) 
-ETS_A1 = DoubleVar(0)
+ETS_A1 = DoubleVar(value=0)
 ETS_A1.set(5.0)
-ETS_TC2 = DoubleVar(0)
+ETS_TC2 = DoubleVar(value=0)
 ETS_TC2.set(0.03)
-ETS_A2 = DoubleVar(0)
+ETS_A2 = DoubleVar(value=0)
 ETS_A2.set(5.0)
 PhaseOffset1x = 37
 PhaseOffset2x = 37
@@ -381,7 +381,7 @@ DevID = "m1k"
 if sys.version_info[0] == 2:
     default_font = tkFont.nametofont("TkDefaultFont")
 if sys.version_info[0] == 3:
-    default_font = tkinter.font.nametofont("TkDefaultFont")
+    default_font = nametofont("TkDefaultFont")
 default_font.configure(size=FontSize)
 ## Vertical Sensitivity list in v/div
 CHvpdiv = (0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0, 5.0)
@@ -418,7 +418,7 @@ Reset_Freq = 300
 MeasGateLeft = 0.0
 MeasGateRight = 0.0 # in mSec
 MeasGateNum = 0
-MeasGateStatus = IntVar(0)
+MeasGateStatus = IntVar(value=0)
 MeasGateStatus.set(0)
 #
 DCV1 = DCV2 = MinV1 = MaxV1 = MinV2 = MaxV2 = MidV1 = PPV1 = MidV2 = PPV2 = SV1 = SI1 = 0
@@ -469,22 +469,22 @@ PhaseVA = []
 PhaseVB = []
 DFiltACoef = [1]
 DFiltBCoef = [1]
-DigFiltA = IntVar(0)
+DigFiltA = IntVar(value=0)
 DigFiltA.set(0)
-DigFiltABoxCar = IntVar(0)
-DigFiltBBoxCar = IntVar(0)
-DigFiltB = IntVar(0)
+DigFiltABoxCar = IntVar(value=0)
+DigFiltBBoxCar = IntVar(value=0)
+DigFiltB = IntVar(value=0)
 DigFiltB.set(0)
-DigBuffA = IntVar(0)
-DigBuffB = IntVar(0)
+DigBuffA = IntVar(value=0)
+DigBuffB = IntVar(value=0)
 DigBuffA.set(0)
 DigBuffB.set(0)
 VFilterA = {}
 VFilterB = {}
-SampleRateStatus = IntVar(0)
-ETSStatus = IntVar(0)
-ETSDisp = IntVar(0)
-ETSDir = IntVar(0)
+SampleRateStatus = IntVar(value=0)
+ETSStatus = IntVar(value=0)
+ETSDisp = IntVar(value=0)
+ETSDir = IntVar(value=0)
 #
 AWGAwaveform = []
 AWGA2X = [] # array for odd numbers samples when in 2x sample rate
@@ -496,7 +496,7 @@ ImemoryA = numpy.ones(1)       # The memory for averaging
 ImemoryB = numpy.ones(1)
 TRACEresetTime = True           # True for first new trace, false for averageing
 TRACEresetFreq = True           # True for first new trace, false for averageing
-AWGScreenStatus = IntVar(0)
+AWGScreenStatus = IntVar(value=0)
 ## Trace line Array Variables used
 T1Vline = []                # Voltage Trace line channel A
 T2Vline = []                # Voltage Trace line channel B
@@ -528,34 +528,34 @@ Is_Triggered = 0
 #
 TRACES = 1                  # Number of traces 1 or 2
 TRACESread = 0              # Number of traces that have been read from ALM
-ScreenTrefresh = IntVar(0)
-ScreenXYrefresh = IntVar(0)
+ScreenTrefresh = IntVar(value=0)
+ScreenXYrefresh = IntVar(value=0)
 #
-NSteps = IntVar(0)  # number of frequency sweep steps
+NSteps = IntVar(value=0)  # number of frequency sweep steps
 NSteps.set(128)
-LoopNum = IntVar(0)
+LoopNum = IntVar(value=0)
 LoopNum.set(1)
 LastWindow = -1
 LastSMPfft = 0
 CurrentFreqX = X0LBP + 14
 FBins = numpy.linspace(0, 50000, num=16384)
 FStep = numpy.linspace(0, 16384, num=NSteps.get())
-FSweepMode = IntVar(0)
-FSweepCont = IntVar(0)
-FStepSync = IntVar(0)
-FSweepSync = IntVar(0)
-ShowCA_VdB = IntVar(0)   # curves to display variables
-ShowCA_P = IntVar(0)
-ShowCB_VdB = IntVar(0)
-ShowCB_P = IntVar(0)
-ShowMarkerBP = IntVar(0)
-ShowCA_RdB = IntVar(0)
-ShowCA_RP = IntVar(0)
-ShowCB_RdB = IntVar(0)
-ShowCB_RP = IntVar(0)
-ShowMathBP = IntVar(0)
-ShowRMathBP = IntVar(0)
-SingleShotSA = IntVar(0) # variable for Single Shot sweeps
+FSweepMode = IntVar(value=0)
+FSweepCont = IntVar(value=0)
+FStepSync = IntVar(value=0)
+FSweepSync = IntVar(value=0)
+ShowCA_VdB = IntVar(value=0)   # curves to display variables
+ShowCA_P = IntVar(value=0)
+ShowCB_VdB = IntVar(value=0)
+ShowCB_P = IntVar(value=0)
+ShowMarkerBP = IntVar(value=0)
+ShowCA_RdB = IntVar(value=0)
+ShowCA_RP = IntVar(value=0)
+ShowCB_RdB = IntVar(value=0)
+ShowCB_RP = IntVar(value=0)
+ShowMathBP = IntVar(value=0)
+ShowRMathBP = IntVar(value=0)
+SingleShotSA = IntVar(value=0) # variable for Single Shot sweeps
 FSweepAdB = []
 FSweepBdB = []
 FSweepAPh = []
@@ -564,60 +564,60 @@ NSweepSeriesR = []
 NSweepSeriesX = []
 NSweepSeriesMag = [] # in ohms 
 NSweepSeriesAng = [] # in degrees
-NetworkScreenStatus = IntVar(0)
-BDSweepFile = IntVar(0)
+NetworkScreenStatus = IntVar(value=0)
+BDSweepFile = IntVar(value=0)
 FileSweepFreq = []
 FileSweepAmpl = []
 #
 MarkerNum = MarkerFreqNum = 0
-ShowTCur = IntVar(0)
-ShowVCur = IntVar(0)
+ShowTCur = IntVar(value=0)
+ShowVCur = IntVar(value=0)
 TCursor = VCursor = 0
-ShowXCur = IntVar(0)
-ShowYCur = IntVar(0)
+ShowXCur = IntVar(value=0)
+ShowYCur = IntVar(value=0)
 XCursor = YCursor = 0
-ShowFCur = IntVar(0)
-ShowdBCur = IntVar(0)
+ShowFCur = IntVar(value=0)
+ShowdBCur = IntVar(value=0)
 FCursor = dBCursor = 0
-ShowBPCur = IntVar(0)
-ShowBdBCur = IntVar(0)
+ShowBPCur = IntVar(value=0)
+ShowBdBCur = IntVar(value=0)
 BPCursor = BdBCursor = 0
-RUNstatus = IntVar(0)       # 0 stopped, 1 start, 2 running, 3 stop and restart, 4 stop
+RUNstatus = IntVar(value=0)       # 0 stopped, 1 start, 2 running, 3 stop and restart, 4 stop
 PowerStatus = 1
 TRIGGERsample = 0           # AD sample trigger point
 DX = 0                      # interpolated trigger point
 ## Spectrum Analyzer Values that can be modified
 DBdivlist = [1, 2, 3, 5, 10, 15, 20]    # dB per division
-DBdivindex = IntVar(0)      # 10 dB/div as initial value
+DBdivindex = IntVar(value=0)      # 10 dB/div as initial value
 DBdivindex.set(4)
-DBlevel = IntVar(0)     # Reference level
+DBlevel = IntVar(value=0)     # Reference level
 DBlevel.set(0)
-DBdivindexBP = IntVar(0)      # 10 dB/div as initial value
+DBdivindexBP = IntVar(value=0)      # 10 dB/div as initial value
 DBdivindexBP.set(4)
-DBlevelBP = IntVar(0)     # Reference level
+DBlevelBP = IntVar(value=0)     # Reference level
 DBlevelBP.set(0)
 hldn = 0
-SpectrumScreenStatus = IntVar(0)
-SmoothCurvesSA = IntVar(0)
-SmoothCurvesBP = IntVar(0)
-CutDC = IntVar(0)
-IAScreenStatus = IntVar(0)
-NqPScreenStatus = IntVar(0)
-NqPDisp = IntVar(0)
-NiCScreenStatus = IntVar(0)
-NiCDisp = IntVar(0)
+SpectrumScreenStatus = IntVar(value=0)
+SmoothCurvesSA = IntVar(value=0)
+SmoothCurvesBP = IntVar(value=0)
+CutDC = IntVar(value=0)
+IAScreenStatus = IntVar(value=0)
+NqPScreenStatus = IntVar(value=0)
+NqPDisp = IntVar(value=0)
+NiCScreenStatus = IntVar(value=0)
+NiCDisp = IntVar(value=0)
 ImpedanceMagnitude  = 0.0 # in ohms 
 ImpedanceAngle = 0.0 # in degrees 
 ImpedanceRseries = 0.0 # in ohms 
 ImpedanceXseries = 0.0 # in ohms
-Show_Rseries = IntVar(0)
-Show_Xseries = IntVar(0)
-Show_Magnitude = IntVar(0)
-Show_Angle = IntVar(0)
-Show_RseriesRef = IntVar(0)
-Show_XseriesRef = IntVar(0)
-Show_MagnitudeRef = IntVar(0)
-Show_AngleRef = IntVar(0)
+Show_Rseries = IntVar(value=0)
+Show_Xseries = IntVar(value=0)
+Show_Magnitude = IntVar(value=0)
+Show_Angle = IntVar(value=0)
+Show_RseriesRef = IntVar(value=0)
+Show_XseriesRef = IntVar(value=0)
+Show_MagnitudeRef = IntVar(value=0)
+Show_AngleRef = IntVar(value=0)
 ## Impedance Analyzer sweep bode plot and reference line variables
 TIARline = []
 TIAXline = []
@@ -629,11 +629,11 @@ RefIARline = []
 RefIAXline = []
 RefIAMagline = []
 RefIAAngline = []
-IASource = IntVar(0)
+IASource = IntVar(value=0)
 ## In IA display series or parallel values
-DisplaySeries = IntVar(0) 
-IA_Ext_Conf = IntVar(0)
-IASweepSaved = IntVar(0)
+DisplaySeries = IntVar(value=0) 
+IA_Ext_Conf = IntVar(value=0)
+IASweepSaved = IntVar(value=0)
 OverRangeFlagA = 0
 OverRangeFlagB = 0
 PeakdbA = 10
@@ -641,8 +641,8 @@ PeakdbB = 10
 PeakRelPhase = 0.0
 PeakfreqA = 100
 PeakfreqB = 1000
-OhmStatus = IntVar(0)
-OhmRunStatus = IntVar(0)
+OhmStatus = IntVar(value=0)
+OhmRunStatus = IntVar(value=0)
 FFTbandwidth = 0                # The FFT bandwidth
 FFTBuffA = [] # Clear the FFTBuff array for trace A
 FFTBuffB = [] # Clear the FFTBuff array for trace B
@@ -656,7 +656,7 @@ FFTmemoryA = numpy.ones(1)       # The memory for averaging
 PhaseMemoryA = numpy.ones(1)
 FFTmemoryB = numpy.ones(1)       # The memory for averaging
 PhaseMemoryB = numpy.ones(1)
-SMPfftpwrTwo = IntVar(0)        # The power of two of SMPfft
+SMPfftpwrTwo = IntVar(value=0)        # The power of two of SMPfft
 SMPfftpwrTwo.set(11)
 SMPfft = 2 ** SMPfftpwrTwo.get()    # Initialize
 Two28 = 268435456
@@ -672,7 +672,7 @@ T1PRline = []               # Phase reference Trace line channel A - B
 T2PRline = []               # Phase reference Trace line channel B - A
 TFMline = []                # Frequency Math Trace
 TFRMline = []               # Frequency reference Math Trace
-FreqTraceMode = IntVar(0)   # 1 normal mode, 2 max hold mode, 3 average mode
+FreqTraceMode = IntVar(value=0)   # 1 normal mode, 2 max hold mode, 3 average mode
 FreqTraceMode.set(1)
 ## Bode Array Variables
 TAFline = []                # Bode Freq Trace line channel A
@@ -689,27 +689,27 @@ TBPRMline = []              # Bode Frequency reference Math Trace
 MinSamplesSA = 64
 MaxSamplesSA = 65536
 #
-MathScreenStatus = IntVar(0)
+MathScreenStatus = IntVar(value=0)
 #
-XYScreenStatus = IntVar(0)
-Xsignal = IntVar(0)   # Signal for X axis variable
+XYScreenStatus = IntVar(value=0)
+Xsignal = IntVar(value=0)   # Signal for X axis variable
 Xsignal.set(1)
-Ysignal = IntVar(0)   # Signal for X axis variable
+Ysignal = IntVar(value=0)   # Signal for X axis variable
 Ysignal.set(3)
-ShowRXY = IntVar(0)   # show reference XY trace
+ShowRXY = IntVar(value=0)   # show reference XY trace
 # show Analog Input Mux Variables
-Show_CBA = IntVar(0)
-Show_CBB = IntVar(0)
-Show_CBC = IntVar(0)
-Show_CBD = IntVar(0)
-D0 = IntVar(0)
-D1 = IntVar(0)
-D2 = IntVar(0)
-D3 = IntVar(0)
-D4 = IntVar(0)
-D5 = IntVar(0)
-D6 = IntVar(0)
-D7 = IntVar(0)
+Show_CBA = IntVar(value=0)
+Show_CBB = IntVar(value=0)
+Show_CBC = IntVar(value=0)
+Show_CBD = IntVar(value=0)
+D0 = IntVar(value=0)
+D1 = IntVar(value=0)
+D2 = IntVar(value=0)
+D3 = IntVar(value=0)
+D4 = IntVar(value=0)
+D5 = IntVar(value=0)
+D6 = IntVar(value=0)
+D7 = IntVar(value=0)
 PIO_0 = 28
 PIO_1 = 29
 PIO_2 = 47
@@ -719,9 +719,9 @@ PIO_5 = 5
 PIO_6 = 6
 PIO_7 = 7
 #
-SCLKPort = IntVar(0)
-SDATAPort = IntVar(0)
-SLATCHPort = IntVar(0)
+SCLKPort = IntVar(value=0)
+SDATAPort = IntVar(value=0)
+SLATCHPort = IntVar(value=0)
 
 ## 25x25 bit map of high going pulse in .gif
 hipulse = """
@@ -17058,8 +17058,8 @@ def MakeMuxModeWindow():
         CHB_Dofflab.pack(side=LEFT)
         frameE = Frame(frameM)
         frameE.pack(side=TOP)
-        MuxEnb = IntVar(0)
-        MuxSync = IntVar(0)
+        MuxEnb = IntVar(value=0)
+        MuxSync = IntVar(value=0)
         muxenab = Checkbutton(frameE, text="Mux-Enb", variable=MuxEnb)
         muxenab.pack(side=LEFT)
         SyncButton = Checkbutton(frameE, compound=TOP, image=hipulseimg, variable=MuxSync, command=SyncImage)
@@ -17707,7 +17707,7 @@ def MakeSpectrumWindow():
         StopFreqEntry.delete(0,"end")
         StopFreqEntry.insert(0,10000)
         
-        HScale = IntVar(0)
+        HScale = IntVar(value=0)
         HzScale = Frame( frame2fr )
         HzScale.pack(side=TOP)
         sarb1 = Radiobutton(HzScale, text="Lin F", variable=HScale, value=0, command=UpdateFreqTrace )
@@ -17915,7 +17915,7 @@ def MakeXYWindow():
         ADI1xy.pack(side=TOP)
 
         # Bottom Buttons
-        MarkerXYScale = IntVar(0)
+        MarkerXYScale = IntVar(value=0)
         MarkerXYScale.set(1)
         # Voltage channel A
         CHAsbxy = Spinbox(frame3xy, width=4, cursor='double_arrow', values=CHvpdiv)
@@ -18698,7 +18698,7 @@ def MakeMinigenWindow():
         minigenwindow.resizable(FALSE,FALSE)
         minigenwindow.protocol("WM_DELETE_WINDOW", DestroyMinigenScreen)
         # 
-        MinigenMode = IntVar(0)
+        MinigenMode = IntVar(value=0)
         mgb1 = Radiobutton(minigenwindow, text="Sine", variable=MinigenMode, value=0, command=BSendMG )
         mgb1.grid(row=1, column=0, sticky=W)
         mgb2 = Radiobutton(minigenwindow, text="Triangle", variable=MinigenMode, value=2, command=BSendMG )
@@ -19019,18 +19019,18 @@ def MakeDigPotWindow():
         digpotwindow.resizable(FALSE,FALSE)
         digpotwindow.protocol("WM_DELETE_WINDOW", DestroyDigPotScreen)
         #
-        SendPot1 = IntVar(0)
+        SendPot1 = IntVar(value=0)
         SendPot1.set(1)
-        SendPot2 = IntVar(0)
+        SendPot2 = IntVar(value=0)
         SendPot2.set(1)
-        SendPot3 = IntVar(0)
+        SendPot3 = IntVar(value=0)
         SendPot3.set(0)
-        SendPot4 = IntVar(0)
+        SendPot4 = IntVar(value=0)
         SendPot4.set(0)
         DPotlabel = Label(digpotwindow,text="Enter number from 0 to 255", style="A12B.TLabel")
         DPotlabel.grid(row=0, column=0, columnspan=3, sticky=W)
         
-        SingleDualPot = IntVar(0)
+        SingleDualPot = IntVar(value=0)
         SingleDualPot.set(0)
         CompMenu = Menubutton(digpotwindow, text="Sel Comp.", style="W8.TButton")
         CompMenu.menu = Menu(CompMenu, tearoff = 0 )
@@ -19153,11 +19153,11 @@ def MakeAD5626Window():
         ad5626window.resizable(FALSE,FALSE)
         ad5626window.protocol("WM_DELETE_WINDOW", DestroyAD5626Screen)
 #
-        SLatchPhase = IntVar(0)
+        SLatchPhase = IntVar(value=0)
         SLatchPhase.set(0)
-        SClockPhase = IntVar(0)
+        SClockPhase = IntVar(value=0)
         SClockPhase.set(1)
-        SerDirection = IntVar(0)
+        SerDirection = IntVar(value=0)
         SerDirection.set(0)
         #
         label2 = Label(ad5626window,text="Enter Output Volts")
@@ -19230,15 +19230,15 @@ def MakeGenericSerialWindow():
         serialwindow.resizable(FALSE,FALSE)
         serialwindow.protocol("WM_DELETE_WINDOW", DestroyGenericSerialScreen)
         #
-        SCLKPort = IntVar(0)
+        SCLKPort = IntVar(value=0)
         SCLKPort.set(PIO_2)
-        SDATAPort = IntVar(0)
+        SDATAPort = IntVar(value=0)
         SDATAPort.set(PIO_1)
-        SLATCHPort = IntVar(0)
+        SLATCHPort = IntVar(value=0)
         SLATCHPort.set(PIO_0)
-        SLatchPhase = IntVar(0)
-        SClockPhase = IntVar(0)
-        SerDirection = IntVar(0)
+        SLatchPhase = IntVar(value=0)
+        SClockPhase = IntVar(value=0)
+        SerDirection = IntVar(value=0)
         label = Label(serialwindow,text="Enter number of Bits")
         label.grid(row=1, column=0, columnspan=2, sticky=W)
         NumBitsEntry = Entry(serialwindow, width=3)
@@ -20178,7 +20178,7 @@ def MakeOhmWindow():
         CHATestVEntry.delete(0,"end")
         CHATestVEntry.insert(0,5.0)
         #
-        RMode = IntVar(0)
+        RMode = IntVar(value=0)
         RMode.set(1)
         TestMode = Frame( frame1 )
         TestMode.grid(row=4, column=0, sticky=W)
@@ -21123,170 +21123,170 @@ def DestroyOOTwindow():
 #
 #
 # ================ Make main Screen ==========================
-TgInput = IntVar(0)   # Trigger Input variable
-SingleShot = IntVar(0) # variable for single shot triger
-ManualTrigger = IntVar(0) # variable for Manual trigger
-AutoLevel = IntVar(0) # variable for Auto Level trigger at mid point
-ShowC1_V = IntVar(0)   # curves to display variables
-TgEdge = IntVar(0)   # Trigger edge variable
+TgInput = IntVar(value=0)   # Trigger Input variable
+SingleShot = IntVar(value=0) # variable for single shot triger
+ManualTrigger = IntVar(value=0) # variable for Manual trigger
+AutoLevel = IntVar(value=0) # variable for Auto Level trigger at mid point
+ShowC1_V = IntVar(value=0)   # curves to display variables
+TgEdge = IntVar(value=0)   # Trigger edge variable
 # Show channels variables
-ShowC1_V = IntVar(0)   # curves to display variables
-ShowC1_I = IntVar(0)
-ShowC2_V = IntVar(0)
-ShowC2_I = IntVar(0)
-ShowAV_I = IntVar(0)
-ShowBV_I = IntVar(0)
-ShowRA_V = IntVar(0)
-ShowRA_I = IntVar(0)
-ShowRB_V = IntVar(0)
-ShowRB_I = IntVar(0)
-ShowMath = IntVar(0)
-ShowPB_A = IntVar(0)
-ShowPB_B = IntVar(0)
-ShowPB_C = IntVar(0)
-ShowPB_D = IntVar(0)
+ShowC1_V = IntVar(value=0)   # curves to display variables
+ShowC1_I = IntVar(value=0)
+ShowC2_V = IntVar(value=0)
+ShowC2_I = IntVar(value=0)
+ShowAV_I = IntVar(value=0)
+ShowBV_I = IntVar(value=0)
+ShowRA_V = IntVar(value=0)
+ShowRA_I = IntVar(value=0)
+ShowRB_V = IntVar(value=0)
+ShowRB_I = IntVar(value=0)
+ShowMath = IntVar(value=0)
+ShowPB_A = IntVar(value=0)
+ShowPB_B = IntVar(value=0)
+ShowPB_C = IntVar(value=0)
+ShowPB_D = IntVar(value=0)
 # Bode and SA variables
-ShowC1_VdB = IntVar(0)   # curves to display variables
-ShowC1_P = IntVar(0)
-ShowC2_VdB = IntVar(0)
-ShowC2_P = IntVar(0)
-ShowMarker = IntVar(0)
-ShowRA_VdB = IntVar(0)
-ShowRA_P = IntVar(0)
-ShowRB_VdB = IntVar(0)
-ShowRB_P = IntVar(0)
-ShowMathSA = IntVar(0)
-ShowRMath = IntVar(0)
-ShowAWGASA = IntVar(0)
-ShowAWGBSA = IntVar(0)
-HScaleBP = IntVar(0)
+ShowC1_VdB = IntVar(value=0)   # curves to display variables
+ShowC1_P = IntVar(value=0)
+ShowC2_VdB = IntVar(value=0)
+ShowC2_P = IntVar(value=0)
+ShowMarker = IntVar(value=0)
+ShowRA_VdB = IntVar(value=0)
+ShowRA_P = IntVar(value=0)
+ShowRB_VdB = IntVar(value=0)
+ShowRB_P = IntVar(value=0)
+ShowMathSA = IntVar(value=0)
+ShowRMath = IntVar(value=0)
+ShowAWGASA = IntVar(value=0)
+ShowAWGBSA = IntVar(value=0)
+HScaleBP = IntVar(value=0)
 HScaleBP.set(1)
 #
-Show_MathX = IntVar(0)
-Show_MathY = IntVar(0)
-AutoCenterA = IntVar(0)
-AutoCenterB = IntVar(0)
-SmoothCurves = IntVar(0)
-ZOHold = IntVar(0)
-TRACEmodeTime = IntVar(0)
+Show_MathX = IntVar(value=0)
+Show_MathY = IntVar(value=0)
+AutoCenterA = IntVar(value=0)
+AutoCenterB = IntVar(value=0)
+SmoothCurves = IntVar(value=0)
+ZOHold = IntVar(value=0)
+TRACEmodeTime = IntVar(value=0)
 TRACEmodeTime.set(0)
-DecimateOption = IntVar(0)
-MathTrace = IntVar(0)
+DecimateOption = IntVar(value=0)
+MathTrace = IntVar(value=0)
 # AWG variables
-AWGAMode = IntVar(0)   # AWG A mode variable
-AWGAIOMode = IntVar(0)   # AWG A Split I/O mode variable
-AWGATerm = IntVar(0)   # AWG A termination variable
-AWGAShape = IntVar(0)  # AWG A Wave shape variable
-AWGAPhaseDelay = IntVar(0) #
-AWGARepeatFlag = IntVar(0) # AWG A Arb shape repeat flag
-AWGABurstFlag = IntVar(0) # AWG A Burst mode flag
-AWGBBurstFlag = IntVar(0) # AWG B Burst mode flag
-AWGBMode = IntVar(0)   # AWG B mode variable
-AWGBIOMode = IntVar(0)   # AWG B Split I/O mode variable
-AWGBTerm = IntVar(0)   # AWG B termination variable
-AWGBShape = IntVar(0)  # AWG B Wave shape variable
-AWGBPhaseDelay = IntVar(0) # 
-AWGBRepeatFlag = IntVar(0) # AWG B Arb shape repeat flag
+AWGAMode = IntVar(value=0)   # AWG A mode variable
+AWGAIOMode = IntVar(value=0)   # AWG A Split I/O mode variable
+AWGATerm = IntVar(value=0)   # AWG A termination variable
+AWGAShape = IntVar(value=0)  # AWG A Wave shape variable
+AWGAPhaseDelay = IntVar(value=0) #
+AWGARepeatFlag = IntVar(value=0) # AWG A Arb shape repeat flag
+AWGABurstFlag = IntVar(value=0) # AWG A Burst mode flag
+AWGBBurstFlag = IntVar(value=0) # AWG B Burst mode flag
+AWGBMode = IntVar(value=0)   # AWG B mode variable
+AWGBIOMode = IntVar(value=0)   # AWG B Split I/O mode variable
+AWGBTerm = IntVar(value=0)   # AWG B termination variable
+AWGBShape = IntVar(value=0)  # AWG B Wave shape variable
+AWGBPhaseDelay = IntVar(value=0) # 
+AWGBRepeatFlag = IntVar(value=0) # AWG B Arb shape repeat flag
 AWGAMode.set(2)
 AWGBMode.set(2)
-AWGSync = IntVar(0) # Sync start both AWG channels
+AWGSync = IntVar(value=0) # Sync start both AWG channels
 AWGSync.set(1)
-BisCompA = IntVar(0) # Make Channel B comp of channel A
+BisCompA = IntVar(value=0) # Make Channel B comp of channel A
 BisCompA.set(0)
 # define vertical measurment variables
-MeasDCV1 = IntVar(0)
-MeasMinV1 = IntVar(0)
-MeasMaxV1 = IntVar(0)
-MeasMidV1 = IntVar(0)
-MeasPPV1 = IntVar(0)
-MeasRMSV1 = IntVar(0)
-MeasRMSVA_B = IntVar(0)
-MeasDCI1 = IntVar(0)
-MeasMinI1 = IntVar(0)
-MeasMaxI1 = IntVar(0)
-MeasMidI1 = IntVar(0)
-MeasPPI1 = IntVar(0)
-MeasRMSI1 = IntVar(0)
-MeasDiffAB = IntVar(0)
-MeasDCV2 = IntVar(0)
-MeasMinV2 = IntVar(0)
-MeasMaxV2 = IntVar(0)
-MeasMidV2 = IntVar(0)
-MeasPPV2 = IntVar(0)
-MeasRMSV2 = IntVar(0)
-MeasDCI2 = IntVar(0)
-MeasMinI2 = IntVar(0)
-MeasMaxI2 = IntVar(0)
-MeasMidI2 = IntVar(0)
-MeasPPI2 = IntVar(0)
-MeasRMSI2 = IntVar(0)
-MeasDiffBA = IntVar(0)
-MeasUserA = IntVar(0)
-MeasAHW = IntVar(0)
-MeasALW = IntVar(0)
-MeasADCy = IntVar(0)
-MeasAPER = IntVar(0)
-MeasAFREQ = IntVar(0)
-MeasBHW = IntVar(0)
-MeasBLW = IntVar(0)
-MeasBDCy = IntVar(0)
-MeasBPER = IntVar(0)
-MeasBFREQ = IntVar(0)
-MeasPhase = IntVar(0)
-MeasTopV1 = IntVar(0)
-MeasBaseV1 = IntVar(0)
-MeasTopV2 = IntVar(0)
-MeasBaseV2 = IntVar(0)
-MeasUserB = IntVar(0)
-MeasDelay = IntVar(0)
-TimeDisp = IntVar(0)
+MeasDCV1 = IntVar(value=0)
+MeasMinV1 = IntVar(value=0)
+MeasMaxV1 = IntVar(value=0)
+MeasMidV1 = IntVar(value=0)
+MeasPPV1 = IntVar(value=0)
+MeasRMSV1 = IntVar(value=0)
+MeasRMSVA_B = IntVar(value=0)
+MeasDCI1 = IntVar(value=0)
+MeasMinI1 = IntVar(value=0)
+MeasMaxI1 = IntVar(value=0)
+MeasMidI1 = IntVar(value=0)
+MeasPPI1 = IntVar(value=0)
+MeasRMSI1 = IntVar(value=0)
+MeasDiffAB = IntVar(value=0)
+MeasDCV2 = IntVar(value=0)
+MeasMinV2 = IntVar(value=0)
+MeasMaxV2 = IntVar(value=0)
+MeasMidV2 = IntVar(value=0)
+MeasPPV2 = IntVar(value=0)
+MeasRMSV2 = IntVar(value=0)
+MeasDCI2 = IntVar(value=0)
+MeasMinI2 = IntVar(value=0)
+MeasMaxI2 = IntVar(value=0)
+MeasMidI2 = IntVar(value=0)
+MeasPPI2 = IntVar(value=0)
+MeasRMSI2 = IntVar(value=0)
+MeasDiffBA = IntVar(value=0)
+MeasUserA = IntVar(value=0)
+MeasAHW = IntVar(value=0)
+MeasALW = IntVar(value=0)
+MeasADCy = IntVar(value=0)
+MeasAPER = IntVar(value=0)
+MeasAFREQ = IntVar(value=0)
+MeasBHW = IntVar(value=0)
+MeasBLW = IntVar(value=0)
+MeasBDCy = IntVar(value=0)
+MeasBPER = IntVar(value=0)
+MeasBFREQ = IntVar(value=0)
+MeasPhase = IntVar(value=0)
+MeasTopV1 = IntVar(value=0)
+MeasBaseV1 = IntVar(value=0)
+MeasTopV2 = IntVar(value=0)
+MeasBaseV2 = IntVar(value=0)
+MeasUserB = IntVar(value=0)
+MeasDelay = IntVar(value=0)
+TimeDisp = IntVar(value=0)
 TimeDisp.set(1)
-XYDisp = IntVar(0)
-FreqDisp = IntVar(0)
-PhADisp = IntVar(0)
-BodeDisp = IntVar(0)
-IADisp = IntVar(0)
-OhmDisp = IntVar(0)
-OOTScreenStatus = IntVar(0)
+XYDisp = IntVar(value=0)
+FreqDisp = IntVar(value=0)
+PhADisp = IntVar(value=0)
+BodeDisp = IntVar(value=0)
+IADisp = IntVar(value=0)
+OhmDisp = IntVar(value=0)
+OOTScreenStatus = IntVar(value=0)
 OOTScreenStatus.set(0)
-PhAScreenStatus = IntVar(0)
+PhAScreenStatus = IntVar(value=0)
 PhAScreenStatus.set(0)
-AppendPhAData = IntVar(0)
+AppendPhAData = IntVar(value=0)
 AppendPhAData.set(0)
-PhAPlotMode = IntVar(0)
+PhAPlotMode = IntVar(value=0)
 PhADatafilename = "PhaseData.csv"
-BodeScreenStatus = IntVar(0)
+BodeScreenStatus = IntVar(value=0)
 BodeScreenStatus.set(0)
-DigScreenStatus = IntVar(0)
+DigScreenStatus = IntVar(value=0)
 DigScreenStatus.set(0)
-DacScreenStatus = IntVar(0)
+DacScreenStatus = IntVar(value=0)
 DacScreenStatus.set(0)
-MuxScreenStatus = IntVar(0)
+MuxScreenStatus = IntVar(value=0)
 MuxScreenStatus.set(0)
-DualMuxMode = IntVar(0)
-MinigenScreenStatus = IntVar(0)
+DualMuxMode = IntVar(value=0)
+MinigenScreenStatus = IntVar(value=0)
 MinigenScreenStatus.set(0)
-DA1ScreenStatus = IntVar(0)
+DA1ScreenStatus = IntVar(value=0)
 DA1ScreenStatus.set(0)
-DigPotScreenStatus = IntVar(0)
+DigPotScreenStatus = IntVar(value=0)
 DigPotScreenStatus.set(0)
-GenericSerialStatus = IntVar(0)
+GenericSerialStatus = IntVar(value=0)
 GenericSerialStatus.set(0)
-AD5626SerialStatus = IntVar(0)
+AD5626SerialStatus = IntVar(value=0)
 AD5626SerialStatus.set(0)
-DigFiltStatus = IntVar(0)
+DigFiltStatus = IntVar(value=0)
 DigFiltStatus.set(0)
-CommandStatus = IntVar(0)
+CommandStatus = IntVar(value=0)
 CommandStatus.set(0)
-MeasureStatus = IntVar(0)
+MeasureStatus = IntVar(value=0)
 MeasureStatus.set(0)
-MarkerScale = IntVar(0)
+MarkerScale = IntVar(value=0)
 MarkerScale.set(1)
-SettingsStatus = IntVar(0)
-CHA_RC_HP = IntVar(0)
-CHB_RC_HP = IntVar(0)
-CHAI_RC_HP = IntVar(0)
-CHBI_RC_HP = IntVar(0)
+SettingsStatus = IntVar(value=0)
+CHA_RC_HP = IntVar(value=0)
+CHB_RC_HP = IntVar(value=0)
+CHAI_RC_HP = IntVar(value=0)
+CHBI_RC_HP = IntVar(value=0)
 #
 if GUITheme == "Light": # Can be Light or Dark or Blue or LtBlue
     FrameBG = "#d7d7d7"
@@ -21684,7 +21684,7 @@ MeasmenuB.menu.add_checkbutton(label='Freq', variable=MeasBFREQ)
 MeasmenuB.menu.add_checkbutton(label='B-A Delay', variable=MeasDelay)
 MeasmenuB.pack(side=LEFT)
 #
-DigScreenStatus = IntVar(0)
+DigScreenStatus = IntVar(value=0)
 DigScreenStatus.set(0)
 #
 if EnableScopeOnly == 0:
@@ -22397,8 +22397,8 @@ if not numpy_found:
     root.destroy()
     exit()
 #
-BrdSel = IntVar(0)
-BoardStatus = IntVar(0)
+BrdSel = IntVar(value=0)
+BoardStatus = IntVar(value=0)
 if pysmu_found:
     ConnectDevice()
     #session.hotplug_attach(ConnectDevice)
