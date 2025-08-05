@@ -26,7 +26,8 @@ The ALICE Desktop software interface is a collection of software instruments wri
             2. https://git-scm.com/downloads/win
 
 1. Install Prefix.Dev's `pixi` as per official instructions at https://pixi.sh/latest/#installation <!-- Instructions after here will work on Windows too provided deps like python3 and git are installed-->
-    - As of Aug 04 2025, running the following command in your favorite terminal shell will set up `pixi` with minimal effort. This may break in the future, always refer to the link above! 
+    - As of Aug 04 2025, running the following command in your favorite terminal shell will set up `pixi` with minimal effort. This may break in the future, always refer to the link above! This command is only for Linux and MacOS, since Windows has a nice and simple installer at: https://github.com/prefix-dev/pixi/releases/latest
+        - https://github.com/prefix-dev/pixi/releases/latest/download/pixi-x86_64-pc-windows-msvc.msi
     ```bash
     curl -fsSL https://pixi.sh/install.sh | sh
     ```
