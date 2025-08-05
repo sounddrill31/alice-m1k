@@ -3,6 +3,58 @@
 Active Learning Interface (for) Circuits (and) Electronics:
 
 The ALICE Desktop software interface is a collection of software instruments written for use with the active learning hardware modules ADALM1000 (M1K) and ADALM2000 (M2K).
+
+
+## Simplified Instructions
+> [!WARNING]
+> This only works for Linux, Windows or OSX Machines on x86_64. aarch64/arm64 and other architectures do not work ootb here. This is because we rely on the conda package for libsmu/pysmu
+
+### Install Instructions (Linux/Mac/Windows) (x86_64)
+0. Ensure that `python3` and `git` are already installed and are accessible from the terminal! 
+    - Linux: Use your default package manager. The command varies from system to system but it usually looks like this:
+        - `sudo apt update; sudo apt install git python3 # Debian/Ubuntu`
+        - `sudo zypper install python3 git # SUSE`
+        - `sudo pacman -S git python # Arch`
+        - `sudo dnf install python3 git # RHEL/Fedora`
+        - `sudo apk install python3 git # Alpine`
+    - Mac: Use brew to install these. That might need additional setup beforehand as well.
+        - `brew install git python`
+    - Windows: Use the winget tool to fetch it. You may need to update the version from 3.12 to the latest one.
+        - `winget install Python.Python.3.12 git`
+        - Or download it manually from:
+            1. https://www.python.org/downloads/windows/
+            2. https://git-scm.com/downloads/win
+
+1. Install Prefix.Dev's `pixi` as per official instructions at https://pixi.sh/latest/#installation <!-- Instructions after here will work on Windows too provided deps like python3 and git are installed-->
+    - As of Aug 04 2025, running the following command in your favorite terminal shell will set up `pixi` with minimal effort. This may break in the future, always refer to the link above! 
+    ```bash
+    curl -fsSL https://pixi.sh/install.sh | sh
+    ```
+    Close your terminal window and open another one after installing.
+2. Prepare workspace with the command
+    ```bash
+    git clone https://github.com/sounddrill31/alice-m1k
+    ```
+    ```bash
+    cd alice-m1k
+    ```
+3. Run the following Command to let `pixi` setup your environment
+    ```bash
+    pixi install
+    ```
+4. Have `pixi` prepare the udev rule(Only for Linux users). This is important for the board to be detected!
+    ```bash
+    pixi run udev-setup
+    ```
+5. Start `alice-desktop-1.3.pyw` using the built-in task!
+    ```bash
+    pixi run start
+    ```
+
+---
+## Old Instructions
+
+
 ### [ALICE 1.3 User Guide for M1K]:
 ### [ALICE 2.0 User Guide for M2K]:
 [ALICE 1.3 User Guide for M1K]:https://wiki.analog.com/university/tools/m1k/alice/desk-top-users-guide
